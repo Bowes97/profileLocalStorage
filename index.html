@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form name="f1" class="signIn location">
+            <h2>Please sign in</h2>
+            <input type="email" placeholder="Email address" class="text email" required>
+            <input type="password" placeholder="Password" class="text password" required>
+            <input type="submit" value="Sign in" class="submit text green">
+            <p class="buttonSignUp p">Sign up now</p>
+        </form>
+        <form name="f2" class="signUp location">
+            <h2>Please sing up</h2>
+            <input type="text" placeholder="First name" class="text" name="firstname" required pattern="[a-zA-Z]{4,8}">
+            <input type="text" placeholder="Last name" class="text" name="lastname" required pattern="[a-zA-Z]{4,8}">
+            <input type="email" placeholder="Email address" class="text" name="email" required
+                pattern="\b[a-zA-Z0-9._%+-]+@[a-z]+\.[a-z]{2,}\b">
+            <input type="password" placeholder="Password" class="text" name="password" required
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <input type="submit" value="Sign in" class="submit text blue">
+            <p class="buttonSignIn p">Sign in now</p>
+        </form>
+        <div class="info location">
+            <img src="1.png" alt="">
+            <p class="name"></p>
+            <p class="login"></p>
+            <p>Designer & Web Developing</p>
+            <input type="button" value="Sign Up" class="leave">
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
